@@ -1,0 +1,17 @@
+:root {
+  /* colors */
+  --black: #282828;
+  --gray500: #8d8d8d;
+  --gray400: #b8b8b8;
+  --gray200: #dddddd;
+  --gray100: #f4f4f4;
+  --gray50: #fafafa;
+  --white: #ffffff;
+  --red: #ff5757;
+
+  /* button height */
+  --button-height-small: 45px;
+  --button-height-medium: 45px;
+  --button-height-large: 50px;
+  --button-height-extra-large: 60px;
+}
