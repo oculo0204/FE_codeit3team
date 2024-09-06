@@ -1,0 +1,16 @@
+.container {
+  position: relative;
+  padding: 15px 40px;
+  border-radius: 6px;
+  background-color: $gray50;
+  box-shadow: 0 0 0 1px inset $black;
+  color: $black;
+
+  .contentContainer {
+    @include flexbox(10px, row, flex-start, center);
+
+    .text {
+      @include glyph16Medium;
+    }
+  }
+}

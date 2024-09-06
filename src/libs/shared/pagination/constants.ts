@@ -1,0 +1,9 @@
+export const PAGINATION_SIBLING_COUNT = 5
+
+export const PUBLIC_GROUPS_PAGE_SIZE = 12
+export const PRIVATE_GROUPS_PAGE_SIZE = 24
+
+export const PUBLIC_POSTS_PAGE_SIZE = 12
+export const PRIVATE_POSTS_PAGE_SIZE = 16
+
+export const COMMENTS_PAGE_SIZE = 5
