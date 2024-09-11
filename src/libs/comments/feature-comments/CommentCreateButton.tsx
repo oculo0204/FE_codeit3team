@@ -12,7 +12,7 @@ import useUpdateQueryURL from '@libs/shared/util-hook/useUpdateQueryURL'
 import { COMMENTS_PAGE_SIZE } from '@libs/shared/pagination/constants'
 
 type CommentCreateButtonProps = {
-  postId: number
+  postId: string
   totalItemCount: number
   onSuccessCreate?: (data: CommentType) => void
 }

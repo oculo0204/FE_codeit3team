@@ -12,7 +12,7 @@ import useConfirmModal from '@libs/shared/modal/useConfirmModal'
 import deleteGroup from '../data-access-groups/deleteGroup'
 
 type GroupOptionButtonsProps = {
-  groupId: number
+  groupId: string
   groupDetail: GroupDetail
   onSuccessEdit?: (data: GroupDetail) => void
 }

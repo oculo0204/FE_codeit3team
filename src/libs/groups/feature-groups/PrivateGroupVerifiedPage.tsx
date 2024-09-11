@@ -17,7 +17,7 @@ import PostsList from '@libs/posts/feature-posts/PostsList'
 import { useEffect, useState } from 'react'
 
 type PrivateGroupVerifiedPageProps = {
-  groupId: number
+  groupId: string
   searchParams: PostsSearchParams
 }
 

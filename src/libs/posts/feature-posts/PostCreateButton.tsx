@@ -8,7 +8,7 @@ import postPost from '../data-access-posts/postPost'
 import useConfirmModal from '@libs/shared/modal/useConfirmModal'
 
 type PostCreateButtonProps = {
-  groupId: number
+  groupId: string
   size?: 'medium' | 'large'
 }
 

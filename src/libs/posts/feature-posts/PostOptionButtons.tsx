@@ -12,7 +12,7 @@ import deletePost from '../data-access-posts/deletePost'
 import { useRouter } from 'next/navigation'
 
 type PostOptionButtonsProps = {
-  postId: number
+  postId: string
   postDetail: PostDetail
   onSuccessEdit?: (data: PostDetail) => void
 }

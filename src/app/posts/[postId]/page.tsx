@@ -21,7 +21,7 @@ type PostDetailPageProps = {
 
 const PostDetailPage = async ({ params, searchParams }: PostDetailPageProps) => {
   const { postId: postIdParams } = params
-  const postId = convertIdParamToNumber(postIdParams)
+  const postId = postIdParams
   const { page: pageParams } = searchParams
   const page = convertPageParamToNumber(pageParams)
 

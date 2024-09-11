@@ -10,7 +10,7 @@ import useConfirmModal from '@libs/shared/modal/useConfirmModal'
 import PrivatePostVerifiedPage from './PrivatePostVerifiedPage'
 
 type PrivatePostVerificationProps = {
-  postId: number
+  postId: string
   page: number
 }
 

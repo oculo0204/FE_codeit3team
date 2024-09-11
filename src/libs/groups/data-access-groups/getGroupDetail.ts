@@ -3,7 +3,7 @@
 import { getRequest } from '@services/api/requests'
 import { GroupDetail } from '@services/api/types'
 
-const getGroupDetail = async (groupId: number) => {
+const getGroupDetail = async (groupId: string) => {
   const response = await getRequest<GroupDetail>(`/groups/${groupId}`, { next: { tags: ['groupDetail'] } })
   return response
 }

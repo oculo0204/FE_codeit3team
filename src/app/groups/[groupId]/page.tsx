@@ -35,7 +35,7 @@ const GroupDetailPage = async ({ params, searchParams }: GroupDetailPageProps) =
   const isPublic = !(isPublicParam === 'false')
 
   const { groupId: groupIdParams } = params
-  const groupId = convertIdParamToNumber(groupIdParams)
+  const groupId = groupIdParams
 
   const isPublicGroup = await getIsPublicGroup(groupId)
   // 참고: 비공개 그룹

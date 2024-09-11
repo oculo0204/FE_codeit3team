@@ -13,7 +13,7 @@ const cx = classNames.bind(styles)
 
 type LikeButtonProps = {
   type: 'group' | 'post'
-  id: number
+  id: string
   setLikeCount: Dispatch<SetStateAction<number>>
 }
 

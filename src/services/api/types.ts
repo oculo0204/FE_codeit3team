@@ -37,7 +37,7 @@ export type PostsSearchParams = {
 
 // group - data
 export type Group = {
-  id: number,
+  id: string,
   name: string,
   introduction: string | null,
   imageUrl: string | null,
@@ -49,7 +49,7 @@ export type Group = {
 }
 
 export type GroupDetail = {
-  id: number,
+  id: string,
   name: string,
   imageUrl: string | null,
   isPublic: boolean,
@@ -77,7 +77,7 @@ export type GroupVerificationFormInput = Pick<GroupFormInput, 'password'>
 
 // post - data
 export type Post = {
-  id: number,
+  id: string,
   nickname: string,
   title: string,
   imageUrl: string | null,
@@ -92,7 +92,7 @@ export type Post = {
 
 export type PostDetail = {
   content: string
-  groupId: number
+  groupId: string
 } & Post
 
 export type IsPublicPost = Pick<Post, 'isPublic' | 'id'>

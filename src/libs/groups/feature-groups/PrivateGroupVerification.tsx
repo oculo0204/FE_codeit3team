@@ -10,7 +10,7 @@ import useConfirmModal from '@libs/shared/modal/useConfirmModal'
 import PrivateGroupVerifiedPage from './PrivateGroupVerifiedPage'
 
 type PrivateGroupVerificationProps = {
-  groupId: number
+  groupId: string
   searchParams: PostsSearchParams
 }
 

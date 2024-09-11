@@ -3,7 +3,7 @@ import { GroupVerificationFormInput } from '@services/api/types'
 
 type VerifyGroupPasswordResponse = { message: string }
 
-const postVerifyGroupPassword = async (groupId: number, body: GroupVerificationFormInput) => {
+const postVerifyGroupPassword = async (groupId: string, body: GroupVerificationFormInput) => {
   const response = await postRequest<VerifyGroupPasswordResponse, GroupVerificationFormInput>(`/groups/${groupId}/verify-password`, body)
   return response
 }

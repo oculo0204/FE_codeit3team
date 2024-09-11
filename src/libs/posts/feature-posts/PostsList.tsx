@@ -8,7 +8,7 @@ import getPosts from '../data-access-posts/getPosts'
 import PostCreateButton from './PostCreateButton'
 
 type PostsListProps = {
-  groupId: number
+  groupId: string
   initialPosts: Post[]
   initialPage: number
   initialHasNext: boolean
