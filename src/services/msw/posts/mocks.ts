@@ -2,7 +2,7 @@ import { IsPublicPost, Post, PostDetail } from '@services/api/types'
 
 export const MOCK_POSTS: Post[] = [
   {
-    id: 1,
+    id: '1',
     nickname: '달봉이',
     title: '달봉이네 가족',
     imageUrl: '/images/image-example.png',
@@ -15,7 +15,7 @@ export const MOCK_POSTS: Post[] = [
     createdAt: '2024-01-22T07:47:49.803Z',
   },
   {
-    id: 2,
+    id: '2',
     nickname: '달봉이',
     title: '달봉이네 가족',
     imageUrl: null,
@@ -28,7 +28,7 @@ export const MOCK_POSTS: Post[] = [
     createdAt: '2024-01-22T07:47:49.803Z',
   },
   {
-    id: 3,
+    id: '3',
     nickname: '달봉이',
     title: '달봉이네 가족',
     imageUrl: '/images/image-example.png',
@@ -41,7 +41,7 @@ export const MOCK_POSTS: Post[] = [
     createdAt: '2024-01-22T07:47:49.803Z',
   },
   {
-    id: 4,
+    id: '4',
     nickname: '달봉이',
     title: '달봉이네 가족',
     imageUrl: null,
@@ -54,7 +54,7 @@ export const MOCK_POSTS: Post[] = [
     createdAt: '2024-01-22T07:47:49.803Z',
   },
   {
-    id: 5,
+    id: '5',
     nickname: '달봉이',
     title: '달봉이네 가족',
     imageUrl: null,
@@ -67,7 +67,7 @@ export const MOCK_POSTS: Post[] = [
     createdAt: '2024-01-22T07:47:49.803Z',
   },
   {
-    id: 6,
+    id: '6',
     nickname: '달봉이',
     title: '달봉이네 가족',
     imageUrl: '/images/image-example.png',
@@ -80,7 +80,7 @@ export const MOCK_POSTS: Post[] = [
     createdAt: '2024-01-22T07:47:49.803Z',
   },
   {
-    id: 7,
+    id: '7',
     nickname: '달봉이',
     title: '달봉이네 가족',
     imageUrl: null,
@@ -93,7 +93,7 @@ export const MOCK_POSTS: Post[] = [
     createdAt: '2024-01-22T07:47:49.803Z',
   },
   {
-    id: 8,
+    id: '8',
     nickname: '달봉이',
     title: '달봉이네 가족',
     imageUrl: '/images/image-example.png',
@@ -109,7 +109,7 @@ export const MOCK_POSTS: Post[] = [
 
 export const MOCK_PRIVATE_POSTS: Post[] = [
   {
-    id: 4,
+    id: '4',
     nickname: '달봉이',
     title: '달봉이네 가족',
     imageUrl: null,
@@ -122,7 +122,7 @@ export const MOCK_PRIVATE_POSTS: Post[] = [
     createdAt: '2024-01-22T07:47:49.803Z',
   },
   {
-    id: 5,
+    id: '5',
     nickname: '달봉이',
     title: '달봉이네 가족',
     imageUrl: null,
@@ -135,7 +135,7 @@ export const MOCK_PRIVATE_POSTS: Post[] = [
     createdAt: '2024-01-22T07:47:49.803Z',
   },
   {
-    id: 6,
+    id: '6',
     nickname: '달봉이',
     title: '달봉이네 가족',
     imageUrl: null,
@@ -150,8 +150,8 @@ export const MOCK_PRIVATE_POSTS: Post[] = [
 ]
 
 export const MOCK_POST_DETAIL: PostDetail = {
-  id: 1,
-  groupId: 1,
+  id: '1',
+  groupId: '1',
   nickname: '달봉이',
   title: '달봉이네 가족',
   imageUrl: '/images/image-example.png',
@@ -166,6 +166,6 @@ export const MOCK_POST_DETAIL: PostDetail = {
 }
 
 export const MOCK_IS_PUBLIC_POST: IsPublicPost = {
-  id: 1,
+  id: '1',
   isPublic: false,
 }
