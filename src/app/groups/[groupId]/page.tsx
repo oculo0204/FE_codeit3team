@@ -1,6 +1,5 @@
 import { META_GROUP_DETAIL } from '@app/_meta'
 import { SortByPosts } from '@services/api/types'
-import convertIdParamToNumber from '@libs/shared/util-util/convertIdParamToNumber'
 import Divider from '@libs/shared/layout/Divider'
 import SectionLayout from '@libs/shared/layout/SectionLayout'
 import Filters from '@libs/shared/filters/Filters'

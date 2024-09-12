@@ -2,7 +2,7 @@ import { Group, GroupDetail, IsPublicGroup } from '@services/api/types'
 
 export const MOCK_GROUPS: Group[] = [
   {
-    id: "1",
+    id: '1',
     name: '달봉이네 가족',
     introduction: '우리는 달봉이',
     imageUrl: '/images/image-example.png',
@@ -13,7 +13,7 @@ export const MOCK_GROUPS: Group[] = [
     createdAt: '2024-01-22T07:47:49.803Z',
   },
   {
-    id: "2",
+    id: '2',
     name: '그룹2',
     introduction: '그룹2 소개',
     imageUrl: '/images/image-example.png',
@@ -24,7 +24,7 @@ export const MOCK_GROUPS: Group[] = [
     createdAt: '2024-02-22T07:47:49.803Z',
   },
   {
-    id: "3",
+    id: '3',
     name: '그룹3',
     introduction: '그룹3 소개',
     imageUrl: null,
@@ -35,7 +35,7 @@ export const MOCK_GROUPS: Group[] = [
     createdAt: '2024-03-03T07:47:49.803Z',
   },
   {
-    id: "4",
+    id: '4',
     name: '달봉이네 가족',
     introduction: '우리는 달봉이',
     imageUrl: '/images/image-example.png',
@@ -46,7 +46,7 @@ export const MOCK_GROUPS: Group[] = [
     createdAt: '2024-01-22T07:47:49.803Z',
   },
   {
-    id: "5",
+    id: '5',
     name: '그룹2',
     introduction: '그룹2 소개',
     imageUrl: '/images/image-example.png',
@@ -57,7 +57,7 @@ export const MOCK_GROUPS: Group[] = [
     createdAt: '2024-02-22T07:47:49.803Z',
   },
   {
-    id: "6",
+    id: '6',
     name: '그룹3',
     introduction: '그룹3 소개',
     imageUrl: '/images/image-example.png',
@@ -102,7 +102,8 @@ export const MOCK_PRIVATE_GROUPS: Group[] = [
     badgeCount: null,
     postCount: 6,
     createdAt: '2024-02-22T07:47:49.803Z',
-  }, {
+  },
+  {
     id: '7',
     name: '비공개 그룹1',
     introduction: null,
@@ -134,7 +135,8 @@ export const MOCK_PRIVATE_GROUPS: Group[] = [
     badgeCount: null,
     postCount: 6,
     createdAt: '2024-02-22T07:47:49.803Z',
-  }, {
+  },
+  {
     id: '10',
     name: '비공개 그룹1',
     introduction: null,

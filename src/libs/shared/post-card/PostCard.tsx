@@ -24,21 +24,21 @@ const PostCard = ({ card }: PostCardProps) => {
     moment = '',
     commentCount = 0,
     likeCount = 0,
-    imageUrl = '/images/default-image.svg'
+    imageUrl = '/images/default-image.svg',
   } = card
 
   // 이미지 URL이 null일 경우 기본 이미지 URL 사용
-  const imageSrc = imageUrl || '/images/default-image.svg';
+  const imageSrc = imageUrl || '/images/default-image.svg'
   
   // moment가 유효한 날짜 문자열인지 확인하고, 그렇지 않으면 현재 날짜를 사용
   const formattedDate = (() => {
-    const date = moment ? new Date(moment) : new Date(); // moment가 null일 경우 현재 날짜 사용
-    return isValid(date) ? format(date, 'yy.MM.dd') : ''; // 유효한 날짜만 포맷
-  })();
+    const date = moment ? new Date(moment) : new Date() // moment가 null일 경우 현재 날짜 사용
+    return isValid(date) ? format(date, 'yy.MM.dd') : '' // 유효한 날짜만 포맷
+  })()
 
   // 필수 데이터가 모두 존재하는지 확인
   if (!nickname || !title) {
-    return null; // 데이터가 부족하면 컴포넌트를 렌더링하지 않음
+    return null // 데이터가 부족하면 컴포넌트를 렌더링하지 않음
   }
 
   return (
@@ -67,13 +67,19 @@ const PostCard = ({ card }: PostCardProps) => {
           </Link>
           {isPublic && (
             <div className={cx('tagsContainer')}>
-              {tags.map((tag, idx) => <div key={idx} className={cx('tag')}>{`#${tag}`}</div>)}
+              {tags.map((tag, idx) => (
+                <div key={idx} className={cx('tag')}>
+                  {`#${tag}`}
+                </div>
+              ))}
             </div>
           )}
         </div>
         <div className={cx('footer')}>
           {isPublic && (
-            <div className={cx('mapInfo')}>{`${location}  ·  ${formattedDate}`}</div>
+            <div className={cx('mapInfo')}>
+              {`${location}  ·  ${formattedDate}`}
+            </div>
           )}
           <div className={cx('countInfo')}>
             <div className={cx('countContainer')}>
