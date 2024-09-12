@@ -36,7 +36,7 @@ const PrivatePostVerifiedPage = ({ postId, page }: PrivatePostVerifiedPageProps)
     <PageLayout paddingBlock='40px 120px'>
       <PostDetailLayout
         postDetail={postDetail}
-        optionButtons={
+        optionButtons={(
           <PostOptionButtons
             postId={postId}
             postDetail={postDetail}
@@ -44,11 +44,11 @@ const PrivatePostVerifiedPage = ({ postId, page }: PrivatePostVerifiedPageProps)
               setPostDetail(response)
             }}
           />
-        }
+        )}
       />
       {commentsPagination && (
         <CommentsLayout
-          createCommentButton={
+          createCommentButton={(
             <CommentCreateButton
               postId={postId}
               totalItemCount={commentsPagination.totalItemCount}
@@ -64,8 +64,8 @@ const PrivatePostVerifiedPage = ({ postId, page }: PrivatePostVerifiedPageProps)
                 })
               }}
             />
-          }
-          contents={
+          )}
+          contents={(
             <CommentsList
               comments={commentsPagination.data}
               currentPage={commentsPagination.currentPage}
@@ -92,7 +92,7 @@ const PrivatePostVerifiedPage = ({ postId, page }: PrivatePostVerifiedPageProps)
                 })
               }}
             />
-          }
+          )}
         />
       )}
     </PageLayout>

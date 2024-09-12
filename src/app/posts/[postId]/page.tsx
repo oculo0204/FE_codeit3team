@@ -1,5 +1,4 @@
 import { META_POST_DETAIL } from '@app/_meta'
-import convertIdParamToNumber from '@libs/shared/util-util/convertIdParamToNumber'
 import PageLayout from '@libs/shared/layout/PageLayout'
 import getIsPublicPost from '@libs/posts/data-access-posts/getIsPublicPost'
 import PrivatePostVerification from '@libs/posts/feature-posts/PrivatePostVerification'
