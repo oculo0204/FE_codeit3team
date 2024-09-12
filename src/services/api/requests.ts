@@ -1,5 +1,5 @@
 const addBaseUrlPrefix = (url: string) => {
-  return url.startsWith('/') ? `${process.env.NEXT_PUBLIC_BASE_URL}${url}` : `${process.env.NEXT_PUBLIC_BASE_URL}/${url}`
+  return url.startsWith('/') ? `https://codeit-demo-be.onrender.com${url}` : `https://codeit-demo-be.onrender.com/${url}`
 }
 
 const requestInterceptor = (url: string, method: string) => {
