@@ -29,7 +29,6 @@ const PostCard = ({ card }: PostCardProps) => {
 
   // 이미지 URL이 null일 경우 기본 이미지 URL 사용
   const imageSrc = imageUrl || '/images/default-image.svg'
-  
   // moment가 유효한 날짜 문자열인지 확인하고, 그렇지 않으면 현재 날짜를 사용
   const formattedDate = (() => {
     const date = moment ? new Date(moment) : new Date() // moment가 null일 경우 현재 날짜 사용
