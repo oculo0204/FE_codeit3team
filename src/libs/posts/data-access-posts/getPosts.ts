@@ -7,9 +7,10 @@ import { PostsSearchParams, Post, PaginationResponse } from '@services/api/types
 const getPosts = async (groupId: string, { sortBy, keyword, isPublic, page = 1 }: PostsSearchParams) => {
   const response = await getRequest<PaginationResponse<Post>>(
     `/groups/${groupId}/posts?keyword=${encodeURIComponent(keyword)}&sortBy=${sortBy}&isPublic=${isPublic}&page=${page}&pageSize=${isPublic ? PUBLIC_POSTS_PAGE_SIZE : PRIVATE_POSTS_PAGE_SIZE}`,
-    { next: { tags: ['posts'], } } // 쉼표 추가
+    { next: { tags: ['posts'] } } // 쉼표 제거
   )
   return response
 }
 
 export default getPosts
+
