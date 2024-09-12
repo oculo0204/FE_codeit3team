@@ -13,3 +13,4 @@ const getPosts = async (groupId: string, { sortBy, keyword, isPublic, page = 1 }
 }
 
 export default getPosts
+
